@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="button-container" class="navbar bg-base-300 justify-center">
+
+        </div>
+    </header>
+    <main>
+        <div class="flex justify-center mt-16">
+            <input id="search-field" type="text" placeholder="Type here category name....."
+                class="input input-bordered w-full max-w-lg" />
+            <button onclick="handleSearch()" class="btn bg-gray-400">Search</button>
+        </div>
+        
+            <div id="news-container">
+
+            </div>
+            <div id="loading-spanner" class="hidden">
+                <span class="loading loading-infinity loading-lg"></span>
+            </div>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/news.js"></script>
+</body>
+
+</html>
